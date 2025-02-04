@@ -11,4 +11,5 @@
     port = 28982;
     address = "localhost";
     #address = "tandoor.local";
-};
+  };
+}
