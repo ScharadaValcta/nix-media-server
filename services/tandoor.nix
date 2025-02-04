@@ -9,7 +9,7 @@
     enable = true;
     #extraConfig = {};
     port = 28982;
-    address = "localhost";
-    #address = "tandoor.local";
+    #address = "localhost";
+    address = "tandoor.local";
   };
 }
