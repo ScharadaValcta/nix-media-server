@@ -41,7 +41,7 @@
       };
       "arm.local" = {
         locations."/index.html" = {
-          proxyPass = "http://127.0.0.1:8080";
+          proxyPass = "http://127.0.0.1:28982";
         };
         extraConfig = ''
           proxy_set_header Host $host;
@@ -51,7 +51,7 @@
       };
       "tandoor.local" = {
         locations."/" = {
-          proxyPass = "http://127.0.0.1:28982";
+          proxyPass = "http://127.0.0.1:8080";
         };
         extraConfig = ''
           proxy_set_header Host $host;

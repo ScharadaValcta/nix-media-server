@@ -8,8 +8,9 @@
   services.tandoor-recipes = {
     enable = true;
     #extraConfig = {};
-    #port = 28982;
+    port = 8080;
+    #port = 28983;
     #address = "localhost";
-    #address = "tandoor.local";
+    address = "tandoor.local";
   };
 }

@@ -81,15 +81,15 @@
   # Enable networking and Open ports in the firewall.
   networking.networkmanager.enable = true;
   networking = {
-    firewall.allowedTCPPorts = [ 80 443 111 2049 8000 8080 28981 28982 ];
+    firewall.allowedTCPPorts = [ 80 443 111 2049 8000 8080 28981 28982 28983 ];
     firewall.allowedUDPPorts = [ 111 2049 ];
   }; 
   # 80 443 -> HTTP und HTTPS
   # 111 2049 -> NAS nfs
   # 8000 -> audiobookshelf
   # 28981 -> paperless-ngx
-  # 8080 -> arm
-  # 28982 -> tandoor
+  # 8080 28982 -> arm
+  # 28983 -> tandoor
 
   # List services that you want to enable:
   # Enable the OpenSSH daemon.

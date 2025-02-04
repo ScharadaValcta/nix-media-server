@@ -25,9 +25,8 @@
     #user = "arm:arm";
     #pull = "always";
     image = "automaticrippingmachine/automatic-ripping-machine:latest";
-    ports = [
-      "8080:8080"
-    ];
+    #ports = [ "8080:8080" ];
+    ports = [ "28982:8080" ];
     environment = {
       ARM_UID = "1001";
       ARM_GID = "1001";
