@@ -89,7 +89,7 @@
   # 8000 -> audiobookshelf
   # 28981 -> paperless-ngx
   # 8080 28982 -> arm
-  # 28983 -> tandoor
+  # 8080 28983 -> tandoor
 
   # List services that you want to enable:
   # Enable the OpenSSH daemon.
