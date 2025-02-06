@@ -9,6 +9,6 @@
     port = 28984;
     group = "users";
     #dataDirectory = "/mnt/nas/podgrab/dataDir";
-    dataDirectory = "/mnt/nas/media/podcasts";
+    dataDirectory = "/mnt/nas/media/audiobooks";
   };
 }
