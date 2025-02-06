@@ -18,6 +18,7 @@
       ../services/jellyfin.nix
       ../services/arm.nix
       ../services/tandoor.nix
+      ../services/podgrab.nix
     ];
 
   fileSystems."/mnt/nas" = {
@@ -81,7 +82,7 @@
   # Enable networking and Open ports in the firewall.
   networking.networkmanager.enable = true;
   networking = {
-    firewall.allowedTCPPorts = [ 80 443 111 2049 8000 8080 28981 28982 28983 ];
+    firewall.allowedTCPPorts = [ 80 443 111 2049 8000 8080 28981 28982 28983 28984 ];
     firewall.allowedUDPPorts = [ 111 2049 ];
   }; 
   # 80 443 -> HTTP und HTTPS
@@ -90,6 +91,7 @@
   # 28981 -> paperless-ngx
   # 8080 28982 -> arm
   # 8080 28983 -> tandoor
+  # 28984 -> podgrab
 
   # List services that you want to enable:
   # Enable the OpenSSH daemon.
