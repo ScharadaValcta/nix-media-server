@@ -18,7 +18,7 @@
       ../services/jellyfin.nix
       ../services/arm.nix
       ../services/tandoor.nix
-      ../services/podgrab.nix
+      #../services/podgrab.nix
     ];
 
   fileSystems."/mnt/nas" = {
