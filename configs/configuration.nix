@@ -18,6 +18,7 @@
       ../services/jellyfin.nix
       ../services/arm.nix
       ../services/tandoor.nix
+      ../services/printing.nix 
       #../services/podgrab.nix
     ];
 
