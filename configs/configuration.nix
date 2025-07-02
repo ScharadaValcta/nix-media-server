@@ -19,6 +19,7 @@
       ../services/arm.nix
       ../services/tandoor.nix
       ../services/printing.nix 
+      ../services/immich.nix 
       #../services/podgrab.nix
     ];
 
@@ -83,11 +84,12 @@
   # Enable networking and Open ports in the firewall.
   networking.networkmanager.enable = true;
   networking = {
-    firewall.allowedTCPPorts = [ 80 443 111 2049 8000 8080 28981 28982 28983 28984 ];
+    firewall.allowedTCPPorts = [ 80 443 631 111 2049 8000 8080 28981 28982 28983 28984 ];
     firewall.allowedUDPPorts = [ 111 2049 ];
   }; 
   # 80 443 -> HTTP und HTTPS
   # 111 2049 -> NAS nfs
+  # 631 -> printing
   # 8000 -> audiobookshelf
   # 28981 -> paperless-ngx
   # 8080 28982 -> arm

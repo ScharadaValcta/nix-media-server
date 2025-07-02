@@ -2,9 +2,36 @@
 
 {
   services = {
+    saned.enable = true;
     printing = {
       enable = true;
       drivers = with pkgs; [ gutenprint hplip ];
+      listenAddresses = [ "*:631" ];
+      extraConf = ''
+        # Lauscht auf allen Interfaces
+        Listen 0.0.0.0:631
+        Listen [::]:631
+        # Erlaubt Netzwerk-Browsing
+        Browsing On
+        BrowseLocalProtocols dnssd
+        # Erlaubt Zugriff von überall (für Testzwecke, später ggf. einschränken)
+        <Location />
+          Order allow,deny
+          Allow all
+        </Location>
+        <Location /admin>
+          AuthType Default
+          Require valid-user
+          Order allow,deny
+          Allow all
+        </Location>
+        <Location /admin/conf>
+          AuthType Default
+          Require valid-user
+          Order allow,deny
+          Allow all
+        </Location>
+      '';
     };
     avahi = {
       enable = true;

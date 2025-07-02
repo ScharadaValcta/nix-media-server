@@ -19,6 +19,7 @@
         optimize = 1;
         pdfa_image_compression = "lossless";
       };
+      PAPERLESS_DATE_FORMAT = "%d.%m.%Y";
     };
     consumptionDirIsPublic = true;
     consumptionDir = "/mnt/nas/paperless/consume";
